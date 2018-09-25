@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './pages/App';
 import Cursos from './pages/Cursos';
@@ -11,7 +11,7 @@ import Curso from './components/Curso';
 
 ReactDOM.render((
 
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
 
     <Route path="/" component={App}>
     <IndexRoute component={Home}/>
